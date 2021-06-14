@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <title>Lernprogramm</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" sizes="512x512" href="pi.png"/>
+  <link rel="apple-touch-icon" href="pi.png">
+  <link rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+  crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+
+  <!-- kaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="main">
+  <div class="top">
+    <div id="headline">
+      <h1 id="headl">Beleg Internettechnologien I</h1>
+      <h2 id="subheader">- Wirtschaftsinformatik SoSe 2020 -</h2>
+    </div>
+    <span id="navbut" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+
+  <div class="container">
+    
+    <div id="task">
+      <h3>Wähle eine Quiz-Kategorie aus!</h3>
+    </div>
+  
+    <div id="categories">
+      <button onclick="chosemathe()" class="catbut" id="mathebut">Mathematik</button>
+      <button onclick="chosegenknow()" class="catbut" id="generalknowbut">Allgemeinwissen</button>
+    </div>
+    
+    <div class="main">
+      <main>
+        <div id="boo"></div>
+        <!--<div id="boo2">Das ist ein Element mit Inline-Formel: $c = \pm\sqrt{a^2 + b^2}$. Rendern als separates Element sieht so aus: $$a' = \begin{pmatrix} a & b \\c & d\end{pmatrix} $$ usw.</div>-->
+        <div id="answer">
+          <button onclick="choosedbut(this.id)" class="answerbut" id="but1">A</button>
+          <button onclick="choosedbut(this.id)" class="answerbut" id="but2">B</button>
+          <button onclick="choosedbut(this.id)" class="answerbut" id="but3">C</button>
+          <button onclick="choosedbut(this.id)" class="answerbut" id="but4">D</button>
+        </div>
+  
+        <p id="text">Wähle die richtige Lösung!</p>
+      </main>
+    </div>
+  </div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="nava">
+    <a href="./">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div> 
+</div>
+
+<div id="myStats" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeStat()">&times;</a>
+  <div class="overlay-content">
+    <div> Sie haben <ca id="ca">0</ca> Fragen richtig beantwortet <i class="far fa-check-circle" id = "R"></i> </div>
+    <div> Sie haben <wa id="wa">0</wa> Fragen falsch beantwortet <i class="far fa-times-circle" id = "F"></i> </div>
+  </div>
+</div>
+
+
+<footer>
+  <div id="stats">
+    <button id="stat" onclick="openStat()">Statistik</button>
+  </div>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>

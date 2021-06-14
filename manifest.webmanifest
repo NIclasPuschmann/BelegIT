@@ -1,0 +1,16 @@
+{
+"name": "Beleg Internettechnologien 1",
+    "short_name": "Beleg_IT1",
+    "description": "Responsive Quiy von Niclas Puschmann",
+    "icons": [
+        {
+            "src": "pi.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "theme_color": "#76d1f2",
+    "background_color": "white"
+}

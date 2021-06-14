@@ -1,0 +1,664 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #1C3144;
+  margin: 0;
+}
+
+#aufgabe {
+  color: #A8C7C1;
+}
+
+.top {
+  height: 15rem;
+  background-color: #70161E;
+}
+
+.container {
+  width: 70rem;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+#headline {
+  text-align: center;
+  border: 5px solid;
+  border-color: #70161E;
+}
+
+#headl {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+#subheader {
+  font-size: 2rem;
+}
+
+#task {
+  margin: auto;
+  width: 40rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #1C3144;
+}
+
+#myBar {
+  width: 0.1%;
+  height: 1rem;
+  background-color: green;
+}
+
+#categories {
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+  width: 30rem;
+  display: block;
+}
+
+.catbut {
+  width: 13rem;
+  display: inline-block;
+}
+
+.main {
+  margin: auto;
+  margin-top: 10px;
+  width: 45rem;
+}
+
+#answer {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+.answerbut {
+  visibility: hidden;
+  width: 7rem;
+  height: 5em;
+  text-align: center;
+  background-color: #70161E;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #70161E;
+  border: none;
+  color: white;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  margin: 1em 1em 1em 1em;
+}
+
+#text {
+  visibility: hidden;
+  text-align: center;
+}
+
+#boo {
+  text-align: center;
+  margin: 1em;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+}
+
+#navbut {
+  position: absolute;
+  top: 0;
+	right: 10px;
+  z-index: 1;
+  color: white;
+}
+
+#nava {
+  margin: auto;
+}
+
+#stats {
+  text-align: center;
+  height: 10rem;
+}
+
+#stat {
+  font-size: 1.4rem;
+}
+
+#ca {
+  color: green;
+}
+
+#wa {
+  color: red;
+}
+
+#R {
+  color: green;
+}
+#F {
+  color: red;
+}
+
+/*Overlay Stat*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #c23a46;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  text-align: center;;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 190px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*iPad Pro*/
+@media only screen and (max-width: 1024px) {
+
+  .top {
+    height: 14rem;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #headl {
+    margin-top: 4rem;
+    font-size: 2.5rem;
+  }
+
+  #subheader {
+    font-size: 2rem;
+  }
+
+  #navbut {
+    right: 2rem;
+    top: 1rem;
+  }
+
+  #nava {
+    position: absolute;
+    right: 4.5rem;
+  }
+
+  #task {
+    font-size: 2rem;
+  }
+
+  #boo {
+    font-size: 1.9rem;
+    padding: 0;
+  }
+
+  #answer {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  } 
+  .answerbut {
+    width: 10em;
+    font-size: 1.5rem;
+  }
+
+  #text {
+    font-size: 2rem;
+  }
+
+  #stat {
+    font-size: 2rem;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+  #headl {
+   margin-top: 3rem;
+   font-size: 2rem;
+ }
+
+ #nava {
+   position: absolute;
+   right: 2.5rem;
+ }
+
+ #navbut {
+   right: 1.5rem;
+   top: 1rem;
+ }
+
+ .sidenav a {
+   font-size: 18px;
+   text-align: center;
+ }
+
+ #mySidenav {
+   max-width: 160px;
+ }
+
+ .sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 110px;
+   font-size: 36px;
+   margin-left: 50px;
+ }
+ 
+ #task {
+   font-size: 1.5em;
+   width: 23rem;
+ }
+
+ #boo {
+   font-size: 1.5rem;
+ }
+
+ .main {
+   width: 40rem;
+ }
+
+ .container {
+   margin: auto;
+   margin-top: 6rem;
+   width: 45rem;
+   text-align: center;
+ }
+
+ #categories {
+   width: 30rem;
+ }
+
+ .catbut {
+   width: 11rem;
+   font-size: 1.1rem;
+ }
+
+ #answer {
+   width: 41rem;
+ }
+
+ .answerbut {
+   width: 8rem;
+   font-size: 1.01rem;
+ }
+
+ #text {
+   font-size: 1.5rem;
+ }
+
+ #stat {
+   font-size: 1.1rem;
+ }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 414px) {
+
+  .top {
+    height: 10rem;
+  }
+  
+  #headl {
+    margin-top: 3.5rem;;
+    font-size: 1.6rem;
+  }
+
+  #subheader {
+    font-size: 1.3em;
+  }
+
+  #nava {
+    position: absolute;
+    right: 2.5rem;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #mySidenav {
+    max-width: 160px;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 110px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #boo {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  #task {
+    margin-top: 0;
+    padding: 0;
+    font-size: 1em;
+    width: 300px;
+  }
+
+  .main {
+    width: 300px;
+  }
+
+  .container {
+    margin: auto;
+    margin-top: 4rem;
+    width: 300px;
+    text-align: center;
+  }
+
+  #categories {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .catbut {
+    width: 12rem;
+  }
+
+  #answer {
+    width: 18rem;
+  }
+
+  .answerbut {
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+
+  #text {
+    font-size: 1rem;
+  }
+}
+
+/*iPhone 6/7/8 */
+@media only screen and (max-width: 375px) {
+
+  .top {
+    height: 10rem;
+  }
+
+  #headl {
+    font-size: 1.5rem;
+  }
+
+  #subheader {
+    font-size: 1rem;
+  }
+
+  #task {
+    font-size: 1rem;
+  }
+
+  #boo {
+    font-size: 0.9rem;
+  }
+
+  .answerbut {
+    font-size: 0.9rem;
+  }
+
+  #categories {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .catbut {
+    width: 11rem;
+    font-size: 1rem;
+  }
+
+  #text {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Galaxy S5 */
+@media only screen and (max-width: 360px) {
+
+  #headl {
+    margin-top: 50px;;
+    font-size: 22px;
+  }
+
+  #subheader {
+    font-size: 1.2rem;
+  }
+
+  #nava {
+    position: absolute;
+    right: 2.5rem;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #mySidenav {
+    max-width: 160px;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 110px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #task {
+    font-size: 1em;
+    width: 300px;
+  }
+
+  .main {
+    width: 300px;
+  }
+
+  .container {
+    margin: auto;
+    width: 300px;
+    text-align: center;
+  }
+
+  #boo {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #categories {
+    margin-top: 0;
+    width: 10rem;
+  }
+
+  .catbut {
+    width: 9rem;
+    font-size: 0.9rem;
+  }
+
+  #answer {
+    margin-top: 0;
+    width: 16rem;
+  }
+  .answerbut {
+    width: 6rem;
+  }  
+
+  main {
+    margin-top:  0;
+  }
+}
+
+/* iPhone SE/5*/
+@media screen and (max-width: 320px) {
+
+  #top {
+    height: 1rem;
+  }
+
+  #headl {
+    margin-top: 4rem;;
+    font-size: 1.1rem;
+  }
+
+  #subheader {
+    font-size: 1em;
+  }
+
+  #nava {
+    position: absolute;
+    right: 2.5rem;
+  }
+
+  #answer {
+    width: 16em;
+  }
+
+  .answerbut {
+    width: 6rem;
+  }
+
+  #boo {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #mySidenav {
+    max-width: 160px;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 110px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #task {
+    text-align: center;
+    font-size: 1em;
+    width: 15em;
+  }
+
+  #text {
+    font-size: 1rem;
+  }
+
+  .main {
+    width: 320px;
+  }
+
+  .container {
+    margin: auto;
+    margin-top: 3rem;
+    width: 300px;
+    text-align: center;
+  }
+
+  #categories {
+    margin-top: 0;
+    width: 10rem;
+  }
+
+  .catbut {
+    width: 9rem;
+  } 
+}
+

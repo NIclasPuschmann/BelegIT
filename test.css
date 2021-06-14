@@ -1,0 +1,147 @@
+/*sidenav*/
+body {
+  font-family: "Lato", sans-serif;
+  color: black;
+  background-color: azure;
+  align-content: center;
+  margin: 0;
+
+
+  /*Welche Breite sollte man waehlen?*/
+  /*Wie krieg ich die Elemente responsive?*/
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#headline {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border: solid black;
+
+}
+
+#task {
+  margin: auto;
+  text-align: center;
+  border: 3px solid black;
+  width: 300px;
+  position: relative;
+}
+
+hr {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+  border-color: rgb(77, 123, 194);
+}
+
+#categories {
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  width: 350px;
+  border: 3px solid black;
+}
+
+.catbut {
+  width: 150px;
+  display: inline-block;
+}
+
+button {
+  background-color: rgb(77, 123, 194);
+  border: none;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.main {
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+  border: 3px solid black;
+}
+
+#answer {
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  top: 50%;
+  right: 0;
+  width: 20%;
+  border: 3px solid black;
+
+}
+
+#navbut {
+  position: absolute;
+	right: 5px;
+  z-index: 1;
+}
+
+#maincontainer {
+  position: relative;
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    position: relative;
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  #navbut {
+      position: absolute;
+      right: 0;
+      z-index: 1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
